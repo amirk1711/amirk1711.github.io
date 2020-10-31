@@ -1919,6 +1919,11 @@ div#aside-content::-webkit-scrollbar {
         height: auto;
     }
 
+
+    #first-page-aside{
+        display: none;
+    }
+    
     #second-page-aside {
         height: auto;
         width: 100%;

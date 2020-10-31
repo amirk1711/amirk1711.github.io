@@ -335,7 +335,7 @@ main::-webkit-scrollbar {
     display: inline-block;
     width: 40%;
     height: 300px;
-    background-image: url(coldplay.jpg);
+    background-image: url(images/coldplay.jpg);
     background-color: rgba(0, 0, 0, 0.2);
     background-position: center;
     background-size: cover;
@@ -884,7 +884,7 @@ ul {
 #gb-flex-content1::before {
     content: "";
     border-radius: 50%;
-    background-image: url(love1.jpg);
+    background-image: url(images/love1.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -897,7 +897,7 @@ ul {
 #gb-flex-content2::before {
     content: "";
     border-radius: 50%;
-    background-image: url(retro1.jpg);
+    background-image: url(images/retro1.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -910,7 +910,7 @@ ul {
 #gb-flex-content3::before {
     content: "";
     border-radius: 50%;
-    background-image: url(chill1.jpg);
+    background-image: url(images/chill1.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -923,7 +923,7 @@ ul {
 #gb-flex-content4::before {
     content: "";
     border-radius: 50%;
-    background-image: url(workout1.jpg);
+    background-image: url(images/workout1.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -936,7 +936,7 @@ ul {
 #gb-flex-content5::before {
     content: "";
     border-radius: 50%;
-    background-image: url(hiphop1.jpg);
+    background-image: url(images/hiphop1.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -949,7 +949,7 @@ ul {
 #gb-flex-content6::before {
     content: "";
     border-radius: 50%;
-    background-image: url(pop1.jpg);
+    background-image: url(images/pop1.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -1263,7 +1263,7 @@ div#aside-content::-webkit-scrollbar {
 .song-thumbnail {
     width: 55px;
     height: 55px;
-    background-image: url(pic2.png);
+    background-image: url(images/pic2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1516,7 +1516,7 @@ div#aside-content::-webkit-scrollbar {
         width: 42px;
         /*        border: 1px solid aqua;*/
         height: 42px;
-        background-image: url(pic2.png);
+        background-image: url(images/pic2.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1779,7 +1779,7 @@ div#aside-content::-webkit-scrollbar {
         display: inline-block;
         width: 25%;
         height: 100px;
-        background-image: url(coldplay.jpg);
+        background-image: url(images/coldplay.jpg);
         background-color: rgba(0, 0, 0, 0.2);
         background-position: top;
         background-size: cover;

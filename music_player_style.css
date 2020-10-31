@@ -1928,6 +1928,11 @@ div#aside-content::-webkit-scrollbar {
         margin-bottom: 30px;
     }
 
+
+    #first-page-aside{
+        display: none;
+    }
+    
     #second-page-aside {
         height: auto;
         width: 100%;

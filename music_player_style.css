@@ -503,6 +503,7 @@ main::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    /*    justify-content: flex-end !impotant;*/
     /*    border: 1px solid aqua;*/
 }
 
@@ -789,7 +790,7 @@ ul {
 /*     gb based songs     */
 .gb-based-songs {
     width: 100%;
-    background-color: #1c4b73;
+    background-color: #1c1a3cd4;
     margin-top: 12px;
     margin-bottom: 12px;
     display: flex;
@@ -1700,7 +1701,8 @@ div#aside-content::-webkit-scrollbar {
     div.gb-based-songs {
 
         margin: 18px auto;
-        width: 100%;
+        width: 90%;
+        box-shadow: 0 0 1px 1px #3a768a;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1898,6 +1900,7 @@ div#aside-content::-webkit-scrollbar {
     body {
         width: 100%;
         margin: 0;
+        /*        margin-bottom: 200px;*/
 
     }
 
@@ -1911,27 +1914,53 @@ div#aside-content::-webkit-scrollbar {
 
     #header-container {
         margin: 0;
-        z-index: 21;
+        z-index: 41;
         background-color: #0C1027;
+        width: 100%;
+    }
+
+    #party-text {
+        z-index: 2;
     }
 
     main {
         height: auto;
+        margin-bottom: 30px;
     }
 
     #second-page-aside {
         height: auto;
         width: 100%;
+        margin-bottom: 40px;
+        /*        border: 1px solid aqua;*/
     }
+
+
 
     #second-page-aside::-webkit-scrollbar {
         display: none;
     }
 
+    #second-page-aside .similar-artist-container .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
 
-    #second-page-aside .similar-artist-container .flex-container .lr-flex-content .lr-image-container {
-        margin-left: -80px;
+    #second-page-aside div.similar-artist-container div.flex-container div.lr-flex-content div.lr-image-container {
+        /*        border: 1px solid aqua;*/
+        height: 70px !important;
+        float: left;
+        margin-left: 10px;
+    }
+
+    #second-page-aside div.similar-artist-container div.flex-container div.lr-flex-content div.lr-title-container {
+        /*        border: 1px solid red;*/
+        float: left;
+        margin-left: 6px;
+        text-align: left;
+        margin-top: 4px;
     }
 
     #second-page-aside .similar-artist-container a {
@@ -1952,9 +1981,15 @@ div#aside-content::-webkit-scrollbar {
 
     .similar-artist-container {
         height: auto;
+        /*        border: 1px solid yellow;*/
     }
 
     .similar-artist-container .flex-container {
         height: auto;
+        overflow: hidden;
+    }
+
+    #first-page-aside {
+        display: none;
     }
 }

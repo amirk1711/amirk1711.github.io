@@ -1,0 +1,715 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+
+#ham-icon {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 1.4rem;
+    visibility: hidden;
+}
+
+#dropdown-menu {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#dropdown-menu {
+    visibility: hidden;
+    position: absolute;
+    right: 16px;
+    top: 52px;
+    display: inline-block;
+    width: auto;
+}
+
+#dropdown-menu ul li {
+    display: block;
+    margin: 0;
+    padding: 4px;
+    background-color: #969e80;
+}
+
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+
+/*Section Classes*/
+
+section {
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+
+/*Skills Section*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+/*    Work Experience*/
+
+.timeline {
+    position: relative;
+    width: 75%;
+    /*    border: 2px solid black;*/
+}
+
+.timeline-box {
+    position: relative;
+    width: 41%;
+    left: 5%;
+    min-height: 150px;
+    margin: 5px;
+    /*    border: 1px solid black;*/
+}
+
+.timeline-heading {
+    height: auto;
+    width: 96%;
+    margin: auto;
+    /*    border: 1px solid blue;*/
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.timeline-heading-image {
+    display: inline-block;
+    width: 15%;
+    /*    border: 1px solid blue;*/
+    vertical-align: 1.2rem;
+}
+
+.timeline-heading-image img {
+    width: 50px;
+    height: 50px;
+}
+
+.timeline-title {
+    display: inline-block;
+    width: 82.5%;
+    /*    border: 1px solid green;*/
+    text-align: right;
+    margin-right: 0px;
+    font-size: 1.1rem;
+}
+
+.timeline-title p {
+    /*    border: 1px dashed green;*/
+    /*    display: inline-block;*/
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.timeline-description {
+    height: auto;
+    width: 96%;
+    margin: auto;
+    /*    border: 1px solid blue;*/
+}
+
+.timeline-description p {
+    letter-spacing: 0.1px;
+    font-size: 0.9rem;
+    color: grey;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -9.6%;
+    border-radius: 50%;
+    background-color: gray;
+    width: 0.7rem;
+    height: 0.7rem;
+    z-index: 1;
+
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -10.3%;
+    border-radius: 50%;
+    background-color: gray;
+    width: 0.7rem;
+    height: 0.7rem;
+    z-index: 1;
+
+}
+
+.timeline-divider {
+    border: 2px dashed #0096fa6b;
+    width: 0;
+    height: 70%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-travellar {
+    color: #2857a4;
+    position: sticky;
+    top: 25%;
+    z-index: 2;
+    transform: rotate(90deg);
+    font-size: 2.3rem;
+    margin-top: -22px;
+}
+
+
+.timeline-travellar i {
+    color: #2857a4;
+    margin-top: -20px;
+    position: absolute;
+    bottom: -18.34px;
+}
+
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/*    contact     */
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+    /*    border: 2px solid green;*/
+}
+
+#contact-container {
+    /*
+    width: 80%;
+    height: 40vh;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+*/
+    display: flex;
+    /*
+    justify-content: space-around;
+    align-items: center;
+*/
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+    /*    border: 1px solid red;*/
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+#my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    /*    margin-left: rem;*/
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.my-details-info-container i {
+    color: white;
+    /*    to align icons in center*/
+    text-align: center;
+    width: 1.2rem;
+    /*    to set icon's size*/
+    font-size: 0.6em;
+}
+
+
+
+#contact-detail p {
+    display: inline-block;
+    margin-top: -8px;
+}
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    /*    border: 1px solid yellow;*/
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    /*    to make input box transparent*/
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875rem;
+    line-height: 1.1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    /*    to remove extra border in forms when start to fill data*/
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .timeline-divider {
+        left: 7%;
+    }
+
+    .timeline-box {
+        left: 12% !important;
+        width: 82%;
+    }
+
+    /*    or mark it important(because it should not be replaced by any css rule) so that no property can replace it and then we dont have to write explicitly below css rule*/
+    /*
+    .timeline-box:nth-child(2n) {
+        left: 12%;
+    }
+*/
+
+    /*
+    .timeline-box:nth-child(2n)::after {
+        left: -8.7%;
+    }
+
+    .timeline-box:nth-child(2n+1)::after {
+        left: -8.7%;
+    }
+*/
+
+    /*    write it this way or this way*/
+
+    .timeline-box::after {
+        left: -8.7% !important;
+    }
+
+
+    html {
+        font-size: 15px;
+        /*        because others have set with rem so they will adjust accordingly*/
+    }
+
+    #contact-container {
+        display: block;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: auto;
+        /*        border: 1px solid black;*/
+    }
+
+    #contact-form {
+        margin: auto;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: auto;
+        margin-top: 80px;
+        /*        border: 1px solid black;*/
+    }
+
+
+
+}
+
+@media screen and (max-width: 572px) {
+    #body-header {
+        height: 55vw;
+        opacity: 0.8;
+        background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 1.2rem;
+    }
+
+    #body-header nav {
+        /* visibility: hidden */
+        display: none;
+    }
+
+    #ham-icon {
+        visibility: visible;
+    }
+
+    #dropdown-menu:hover {
+        visibility: visible;
+    }
+
+    #ham-link:hover + #dropdown-menu {
+        visibility: visible;
+    }
+
+
+
+
+    #name-social-container div {
+        display: block;
+        /* border: 1px solid red; */
+    }
+
+    #name-social-container {
+        margin-top: 10px;
+        width: auto;
+        /* border: 1px solid green; */
+        display: inline-block;
+        margin-left: 25%;
+        font-size: 1.rem !important;
+    }
+}
+
+/* Common Margin Classes */
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+.blue-text {
+    color: #2857a4;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+}
+
+.orange-text {
+    color: #eb7846;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.time-period {
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}

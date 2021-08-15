@@ -1,0 +1,149 @@
+/*     For Mobile Phones in Portrait Mode     */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+	/*     Header     */
+	.main-header {
+		padding: 20px 10px 10px 10px;
+	}
+	.logo-container {
+		flex: 1;
+	}
+	.auth-container {
+		flex: 2;
+	}
+	.auth-container a {
+		margin: 0;
+	}
+	.signup-btn {
+		padding: 5px 15px;
+	}
+	.nav-links {
+		display: none;
+	}
+
+	/*     Intro     */
+	.intro {
+		flex-direction: column;
+		padding: 20px 10px 10px 10px;
+	}
+	.intro-right {
+		order: -1;
+	}
+
+	/*     Stats     */
+	.stats {
+		padding: 40px 10px 20px 10px;
+	}
+	.stat-card {
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-right: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.stat-icon-container {
+		margin: 0;
+	}
+	.stat-title-container,
+	.stat-icon-container {
+		text-align: center;
+	}
+
+	/*     Features     */
+	.features {
+		padding: 0px 10px 10px 10px;
+		flex-direction: column;
+	}
+	.features-left {
+		order: -2;
+	}
+
+	/*     Plans     */
+	.plans {
+		padding: 20px 10px 10px 10px;
+		align-items: flex-start;
+	}
+	.plans-heading {
+		width: 100%;
+	}
+	.choose-plan,
+	.choose-plan-desc {
+		text-align: left;
+	}
+	.plans-card-container {
+		flex-direction: column;
+	}
+	.plan-card {
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+
+	/*     Locations     */
+	.location {
+		padding: 20px 10px 10px 10px;
+		align-items: flex-start;
+	}
+	.location-heading {
+		width: 100%;
+		text-align: left;
+	}
+	.location-desc {
+		width: 100%;
+		text-align: left;
+	}
+	.global-img {
+		width: 90%;
+	}
+
+	/*     Feedback     */
+	.feedback {
+		padding: 20px 10px 10px 10px;
+	}
+	.feedback-heading {
+		width: 100%;
+		text-align: left;
+	}
+	.feedback-desc {
+		width: 100%;
+		text-align: left;
+	}
+	.arrow-container {
+		width: 40px;
+		height: 40px;
+	}
+
+	/*     Review card     */
+	.reviews-card {
+		width: 98%;
+		height: auto;
+	}
+
+	/*     Subscribe     */
+	.subscribe {
+		padding: 20px 10px 10px 10px;
+	}
+	.subscribe-container {
+		margin-top: 0px;
+		flex-direction: column;
+		padding: 15px 20px;
+	}
+
+	/*     Footer     */
+	.footer {
+		padding: 20px 10px 10px 10px;
+		flex-direction: column;
+	}
+	.footer-left {
+		order: 2;
+		margin-top: 30px;
+	}
+	.footer-right {
+		margin-top: 30px;
+		padding-left: 0;
+	}
+	.copyright {
+		text-align: center;
+		padding: 0;
+	}
+}
